@@ -1,4 +1,4 @@
-// Node class for bi-directional Linked List of Cards
+// Node class for bidirectional Linked List of Cards
 public class Node {
 
     public Card data;

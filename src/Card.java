@@ -28,12 +28,17 @@ public class Card {
         System.out.print(suit + ": " + rank);
     }
 
+    //method used to compare the ordinal value of the rank and suit (in that order)
     public int compareTo(Card other) {
         if (this.rank.ordinal() > other.rank.ordinal()) {
             return 1;
-        } else if (this.rank.ordinal() < other.rank.ordinal()) {
+        }
+        else if (this.rank.ordinal() < other.rank.ordinal()) {
             return -1;
-        } else { // Ranks are equal, compare suits
+        }
+
+        //if ranks are equal it will compare suits instead
+        else {
             return Integer.compare(this.suit.ordinal(), other.suit.ordinal());
         }
     }
